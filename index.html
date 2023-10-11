@@ -184,9 +184,9 @@
             var date = new Date().toLocaleString('zh-TW', options)
             console.log(date)
             // 2023年6月15日 星期四 23:12:24
-            var hourStr = date.slice(14, 16)
-            var minuteStr = date.slice(17, 19)
-            var dayStr = date.slice(10, 13)
+            var hourStr = date.slice(16, 18)
+            var minuteStr = date.slice(19, 21)
+            var dayStr = date.slice(12, 15)
 
             text.innerText = `${hourStr}:${minuteStr}`
             textDay.innerText = `${dayStr}`
