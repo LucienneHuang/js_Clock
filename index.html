@@ -182,8 +182,6 @@
                 timeZone: `${nation_en[i]}`
             };
             var date = new Date().toLocaleString('zh-TW', options)
-            console.log(date)
-            // 2023年6月15日 星期四 23:12:24
             var hourStr = date.slice(16, 18)
             var minuteStr = date.slice(19, 21)
             var dayStr = date.slice(12, 15)
@@ -195,21 +193,15 @@
         left.addEventListener("click", function () {
             if (i <= 0) {
                 i = 0
-                console.log(i)
             } else {
                 i--
-                console.log(i)
-
             }
         })
         right.addEventListener("click", function () {
             if (i < 8) {
                 i++
-                console.log(i)
             } else {
                 i = 8
-                console.log(i)
-
             }
         })
         clock()
